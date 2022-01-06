@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Edición de producto</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles-listEdit.css">
+    <link rel="stylesheet" href="/css/styles-upload.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/images/favicon.ico" type="ico">
+</head>
+
+<body>
+  
+        <main>
+    
+                <h2>Editar el producto <%=product.title%></h2>
+            <form action="/admin/editProduct/<%=product.id%>?_method=put" method="post" enctype="multipart/form-data">
+                <h1>Carga un nuevo producto</h1>
+                <section class="images">
+                    <div class="contain-upload-image">
+                        <input class="upload-image" id="file" name="imgEdit" type="file" value="<%=product.img%>">
+                        <label class="icon-upload" for="file">
+                            <h3><i class="fas fa-plus"></i></h3>
+                        </label>
+                    </div>
+                    <div class="preview edit" id="preview">
+                        <img class ="imgProduct"src="/images/imgProducts/<%=product.imgProduct%>" alt="<%=product.imgProduct%>">
+                    </div>
+
+
+                    <script>
+                        document.getElementById('file').onchange = function (i) {
+                            for (let i = 0; i < this.files.length; i++) {
+                                let reader = new FileReader();
+                                reader.onload = function (e) {
+                                    let img = document.createElement('img');
+                                    img.classList.add('imgProduct');
+                                    img.src = e.target.result;
+                                    document.getElementById('preview').appendChild(img);
+                                }
+                                reader.readAsDataURL(this.files[i]);
+                            }
+                        }
+                    </script>
+
+                </section>
+                <section>
+                    <div class="box">
+                        <h3>Nombre del artículo</h3>
+                        <label for="title"></label>
+                        <input type="text" name="title" id="title" value="<%=product.title%>">
+                    </div>
+                    <div class="box">
+                        <h3>Precio $</h3>
+                        <label for="price"></label>
+                        <input type="number" name="price" id="price" value="<%=product.price%>">
+                    </div>
+                    <div class="box">
+                        <h3>Descuento %</h3>
+                        <label for="discount"></label>
+                        <input type="number" name="discount" id="discount" value="<%=product.discount%>">
+                    </div>
+                    <div class="box">
+                        <h3>Descripción Corta</h3>
+                        <label for="shortDescription"></label>
+                        <textarea name="shortDescription" id="shortDescription" cols="10" rows="4" value="<%=product.shortDescription%>"><%=product.shortDescription%></textarea>
+                    </div>
+                    <div class="box">
+                        <h3>Descripción Larga</h3>
+                        <label for="longDescription"></label>
+                        <textarea name="longDescription" id="longDescription" cols="20" rows="8"  value="<%=product.longDescription%>"><%=product.longDescription%></textarea>
+                    </div>
+                    <div class="box">
+                        <h3>Stock</h3>
+                        <label for="stock"></label>
+                        <input type="number" name="stock" id="stock" value="<%=product.stock%>">
+                    </div>
+                    <div class="box">
+                        <h3>Costo de envío $</h3>
+                        <label for="shippingCost"></label>
+                        <input type="number" name="shippingCost" id="shippingCost" value="<%=product.shippingCost%>">
+                    </div>
+                    <div class="box">
+                        <h3>¿Es un producto Luxury?</h3>
+                        <select name="luxury" id="luxury">
+                            <option name="Luxury" value="true">Si</option>
+                            <option name="Luxury" value="false">No</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <h3>Categoría</h3>
+                        <select name="category" id="category">
+                            <option name="category" value="Whisky">Whisky</option>
+                            <option name="category" value="Vodka">Vodka</option>
+                            <option name="category" value="Champagne">Champagne</option>
+                            <option name="category" value="Tequila">Tequila</option>
+                            <option name="category" value="Ron">Ron</option>
+                            <option name="category" value="Sake">Sake</option>
+                        </select>
+                    </div>
+
+              
+             <button type="submit" value="Editar">Editar </button>
+            </form>
+
+
+
+        </main>
+
+</body>
+
+</html>

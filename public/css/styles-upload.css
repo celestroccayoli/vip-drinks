@@ -1,0 +1,132 @@
+/* START UNIVERSAL*/
+*{  
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+/* END UNIVERSAL*/
+
+/* START CUERPO EN GRAL */
+
+
+body{
+    display: block;
+    font-family: 'Lato', sans-serif;
+    margin: 0%;
+    background:#36131e;
+}
+
+main{
+    margin-top: 30%;
+}
+
+form{
+    padding: 10px;
+    border-radius: 20px;
+    width: 90%;
+   margin: 0 auto;
+   padding: auto;
+   background: rgba(0, 0, 0, 0.7);
+}
+img.imgProduct{
+    height: 100px;
+    width: 100px;
+    margin-left: 8px;
+}
+.contain-upload-image{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    transition: ease 450ms all;
+    cursor: pointer;
+}
+.icon-upload{
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+input.upload-image{
+    display: none;
+}
+
+.images {
+    display: flex;
+}
+
+.contain-upload-image:hover  i{
+    color: gold;
+}
+
+h1{
+    text-align: center;
+    margin: 10px 0;
+    color: gold;
+}
+
+h3{
+    color: whitesmoke;
+    font-weight: 200;
+    margin: 10px 0;
+}
+
+input, 
+select#category,
+select#luxury,
+textarea{
+    width: 100%;
+    border: none;
+    background: black;
+    font-size: 1em;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contain-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button{
+    width: 49%;
+    margin: 10px 0;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+button.cancel{
+    background: white;
+    color: #ffeb00f0;
+    border: solid 1px #ffeb00f0;
+}
+
+button.upload{
+    background: #ffeb00f0;
+    color: white;
+    border: solid 1px white;
+}
+
+p{
+    font-size: 12px;
+    color: gray;
+}
+
+/* END CUERPO EN GRAL */
+
+/* START MEDIA QUERIES */
+
+@media(min-width: 768px){
+    main{
+        margin-top: 10px;
+    }
+}
+
+/* END MEDIA QUERIES */

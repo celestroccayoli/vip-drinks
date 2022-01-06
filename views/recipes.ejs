@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+<head>
+
+    <title>recipes</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styles-header.css">
+        <link rel="stylesheet" href="css/styles-footer.css">
+        <link rel="stylesheet" href="css/styles-recipes.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="icon" href="/images/favicon.ico" type="ico">
+
+</head>
+<body>
+    <%- include('./partials/header') %>
+    
+<!--ACÁ VAMOS A DARLE CUERPO A ESTA PÁG-->
+<main>
+    <section class="main-recipes">
+        <!--MARGARITA-->
+        <article class="receta"> 
+            <p class= "título-receta">Margarita</p>
+            <div class="receta-con-fondo">
+               <div class="foto-receta"> <img src="/images/receta-margarita.png" alt="margarita"></div>
+               <div class="fondo-humo"> <img src="/images/fondo-tragos.gif" alt="margarita" class="fondo-humo"></div>
+               <div class= "descripcion-receta">
+                <div class="ingredientes">
+                    <h4 class="copy-ingredientes"> Ingredientes </h4>
+                    <li>450ml de tequila</li>
+                    <li>30ml de triple sec</li>
+                    <li>30ml de jugo de lima recien exprimido</li>
+                    <li>Lima</li>
+                    <li>Sal</li>
+                    <li>Hielos</li>
+                </div>
+                <p class= "procedimiento">Fijese que siempre es el doble de cantidad de tequila que de triple seco 
+                    y de zumo de lima por lo que si quieres preparar una gran cantidad 
+                    tan solo tienes que utilizar un vaso como medida y por cada medida 
+                    de tequila añadir media de triple seco y media de zumo de lima</p>
+            </div>
+            </div>
+
+
+        </article>
+        <!--MARTINI-->
+        <article class="receta">
+            <p class= "título-receta">Martini</p>
+            <div class="receta-con-fondo">
+                <div class="foto-receta"><img src="/images/receta-martini.png" alt="margarita"></div>
+                <div class="fondo-humo"> <img src="/images/fondo-tragos.gif" alt="margarita" class="fondo-humo"></div>
+                <div class= "descripcion-receta">
+                    <div class="ingredientes">
+                        <h4 class="copy-ingredientes"> Ingredientes </h4>
+                        <li>30ml de Vermú Blanco Seco</li>
+                        <li>30ml de Ginebra</li>
+                        <li>2 aceitunas deshuesadas sin relleno</li>
+                        <li>Corteza de limón</li>
+                        <li>Abundante hielo</li>
+                    </div>
+                    <p class="procedimiento">Coloque la ginebra o el vodka y el vermut seco en un vaso mezclador. Agregar cubitos de hielo y mezclar durante 30 segundos con una bailarina hasta que el martini se enfríe. Colar la bebida en el vaso de martini previamente helado.</p>
+                </div>
+        </article>
+        <!--TEQUILA SUNRISE-->
+        <article class="receta">
+            <p class= "título-receta">Tequila Sunrise</p>
+            <div class="receta-con-fondo">
+                <div class="foto-receta"><img src="/images/receta-tequila-sunrise.png" alt="tequila-sunrise"></div>
+                <div class="fondo-humo"> <img src="/images/fondo-tragos.gif" alt="margarita" class="fondo-humo"></div>
+                <div class= "descripcion-receta">
+                        <h4 class="copy-ingredientes"> Ingredientes </h4>
+                        <li>150ml de taza de jugo de naranja natural</li>
+                        <li>450ml de tequila</li>
+                        <li>6 cubitos de hielo</li>
+                        <li>2 cucharadas de Granadina</li>
+                        <li>1 a 2 naranjas cortada en rodajas</li>
+                        <li>Cerezas para decorar ( 1 por vaso)</li>
+                </div>
+            </div>
+
+            </div>
+        </article>
+        <!--BLOODY MARY-->
+        <article class="receta">
+            <p class= "título-receta">Bloody Mary</p>
+            <div class="receta-con-fondo">
+                <div class="foto-receta"><img src="/images/receta-bloody-mary.png" alt="bloody-mary"></div>
+                <div class="fondo-humo"> <img src="/images/fondo-tragos.gif" alt="margarita" class="fondo-humo"></div>
+                <div class= "descripcion-receta">
+                    <h4 class="copy-ingredientes"> Ingredientes </h4>
+                    <li>60 ml de Vodka</li>
+                    <li>2 gotas de Tabasco (salsa picante)</li>
+                    <li>3 gotas de salsa Perrins</li>
+                    <li>1 pizca de sal de apio</li>
+                    <li>1 toque de pimienta negra recién molida</li>
+                    <li>10 ml. de caldo de carne</li>
+                    <li>15 ml. de jugo de limón</li>
+                    <li>180 ml. de zumo de tomate</li>
+                    <li>Para decorar: apio y rodaja de limón</li>
+                    <li>Hielo</li>
+                </div>
+    </article>
+    </section>
+</main>
+
+<%- include('./partials/footer') %>
+
+</body>
+</html>
+</html>

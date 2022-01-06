@@ -1,0 +1,277 @@
+/* START UNIVERSAL*/
+*{  
+   
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+/* END UNIVERSAL*/
+
+/* START CUERPO EN GRAL */
+
+
+main{
+    display: block;
+    width: 100vw;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+img.banner{
+    width: 100%;
+}
+banner-img{
+ width: 100vw;
+}
+
+li{
+    text-decoration: none;
+}
+
+h3.sub-subtitle{
+    color: black;
+    font-size: large;
+    font-family: 'Vujahday Script', cursive;
+    font-weight: 300;
+}
+
+/* END CUERPO EN GRAL */
+
+/* START MAIN */
+
+main{
+    width: 90%;
+    margin: 150px auto 10px;
+}
+
+.featured,
+.novelties{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main section article{
+    display: inline-block;
+    margin: 10px 0px;
+    background: rgba(0, 0, 0, 0.7);
+   
+}
+
+main section article img {
+    width: 100%;
+    opacity: 100%;
+}
+/* main section article img:hover {
+    width: 100%;
+    opacity: 60%;
+} */
+
+.main-article{
+    position: relative;
+    border-top: solid 1px grey;
+    padding: 15px;
+    transition: 2s;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+    color: whitesmoke;
+}
+
+.discount,
+.shipping{
+    width: 70%;
+    color: #666;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.description{
+    display: none;
+    color: orange;
+    margin-top: em;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: -15px;
+    transition: 2s;
+}
+
+main section article .main-article:hover i{
+    transform: rotateZ(-90deg);
+}
+
+main section h3{
+    margin:20px 0px;
+    color: whitesmoke;
+ 
+}
+
+article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
+    padding: 15px 15px 5px;
+}
+
+/* END MAIN */
+
+/* START BOTON COMPRAR*/
+form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+button.detail{
+    background: none;
+    color: black;
+    padding: 5px;
+    margin: 8px 0 0;
+    width: 120px;
+    transition: all 2s;
+    border: solid 1px gray;
+    cursor: pointer;
+}
+
+button.detail:hover{
+    background: white;
+    color: orange;
+    border: solid 1px orange;
+}
+
+/* END BOTON COMPRAR*/
+
+/* START CARROUSEL PRODUCTS*/
+section.carrousel-products{
+    display: flex;
+    border-top: 1px solid gray;
+    border-bottom: gray solid 1px;
+    margin-bottom: 10px;
+}
+article.product{
+    max-width: 200px;
+    margin: 10px auto;
+    background-color: white;
+}
+
+section.nosotros{
+    background:rgb(237, 237, 237);
+    padding: 0px, 10px;
+    margin: 8px, 16px,auto; 
+}
+
+section.categories {
+    display: flex;
+    flex-direction: column;
+}
+
+section.categories article {
+    background: none;
+}
+
+article.categories{
+    position: relative;
+    z-index: -1;
+    padding: 0px;
+    margin: 0;
+    border: none;
+    max-height: 200px;
+    cursor: pointer;
+}
+.main-category{
+    position: absolute;
+    left: 36px;
+    top: 36px;
+    z-index: 2;
+    color: white;
+    padding: 6px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.main-category h3{
+    color: white;
+}
+button.ver-mas{
+    background: none;
+    border: solid 2px white;
+    padding: 8px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* END CARROUSEL PRODUCTS*/
+
+
+/* START MEDIA QUERIES */
+
+@media(min-width: 0px){
+    .shipping{
+        width: 100%;
+    }
+}
+
+@media(min-height: 450px){
+}
+
+@media(min-width: 768px){
+    main{
+        margin: 0 auto;
+    }
+    
+    article{
+     max-width: 40%;
+    }
+
+    main section article:hover .description{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        transition: 2s;
+    }
+
+    .discount{
+        width: 50%;
+        text-align: end;
+    }
+
+    .shipping{
+        width: 100%;
+    }
+}
+
+@media(min-width: 1024px){
+article{
+    max-width: 22%;
+   }
+}
+
+

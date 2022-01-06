@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+<head>
+
+    <title>Kits Luxury</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/673f269efc.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/styles-header.css">
+        <link rel="stylesheet" href="/css/styles-footer.css">
+        <link rel="stylesheet" href="/css/styles-luxury.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="icon" href="/images/favicon.ico" type="ico">
+
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+    
+        
+<main>
+    <div class="products"></div>
+    <h3>Categoría Premium </h3>
+    <section class="featured">
+
+        <% listProducts.forEach(product => { %>
+            <article class="product">
+                <a href="/product/detalle/<%= product.id %>">
+                    <img src="/images/imgProducts/<%= product.imgProduct %>" alt="<%= product.title %>">
+                </a>
+                <div class="main-article">
+                    <i class="fas fa-plane"></i>
+                    <p class="price">$<%= product.price %></p>
+                    <p class="shipping">Envío Global Gratuito</p> 
+                    <h4 class="description"><%= product.title %></h4>
+                    <form action="/shop" method="post">
+                    <button class="buy" type="submit">Comprar</button>
+                    </form>
+                </div> 
+            </article>
+            <% }) %>
+   
+</section>
+</main>
+        
+<%- include('./partials/footer') %>
+        
+</body>
+</html>

@@ -1,0 +1,640 @@
+/* UNIVERSAL*/
+*{  
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+/* UNIVERSAL*/
+
+/* START CUERPO EN GRAL */
+
+main{
+    display: block;
+    width: 100vw;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+img{
+    width: 100%;
+}
+
+li{
+    text-decoration: none;
+}
+
+h3{
+    color: whitesmoke;
+}
+
+i{
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 8px;
+}
+
+/* END CUERPO EN GRAL */
+
+/* START SECCIÒN RECOMENDADOS */
+
+section.intereses{
+    display: none;
+}
+
+/* END SECCIÒN RECOMENDADOS */
+
+/* START DETALLES DE ARTÍCULO*/
+.main-reput{
+    display: flex;
+}
+.article-detalle{
+    color: whitesmoke;
+    margin-top: 30%;
+    width: 90%;
+    margin-top: 30%;
+    margin: 30% auto 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 2%;
+}
+
+.selector{
+    background: black;
+    color: whitesmoke;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 5px 5px 10px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.caracteristica{
+    width: 50%;
+}
+
+select{
+    width: 50%;
+    border-radius: 5px;
+    color: whitesmoke;
+    background:rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border: none;
+}
+
+p.off{
+    color: #1bad20;
+}
+
+h4.price{
+    font-size: 36px;
+    font-weight: 300;
+    width: 100%;
+
+}
+
+p.payment-details{
+    color: grey;
+    width: 100%;
+
+}
+
+.button-stock{
+    padding: 1px;
+    width: 90px;
+    background-color: orange;
+    justify-content: center;
+}
+
+.box,
+article.caracteristicas{
+    padding: 1%;
+    display: flex;
+    margin: 10px 0;
+    width: 350px;
+}
+.box-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box a{
+    text-decoration: none;
+    color: #3483fa;
+    font-size: x-small;
+    margin-left: 20px;
+    font-weight: 300;
+    width: 90%;
+}
+
+.box-item{
+    display: flex;
+ 
+    align-items: center;
+}
+
+.title-green{
+    color: #1bad20;
+}
+
+i {
+    color: #1bad20;
+}
+
+p.informative{
+    font-size: 16px;
+    color: grey;
+    text-align: center;
+    font-weight: 300;
+}
+
+h4.title{
+    margin-bottom: 10px;
+}
+
+
+form{
+    width: 100%;
+    display: flex;
+    padding: 6px;
+    align-items: center;
+}
+
+div.buy{
+    padding: 10px;
+    border-radius: 7px;
+    color: white;
+    border: 1px solid;
+    background-color: orange;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+div.buy:hover{
+    background-color: #b57500;
+    color: white;
+    border: none;
+}
+
+
+button.add{
+    padding: 10px;
+    border-radius: 7px;
+    width: 250px;
+    background: white;
+    color:orange;
+    border: solid 1px orange;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+button.add:hover{
+    border: none;
+}
+
+p.title-grey{
+    display: inline-block;
+    color: grey;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+i.fas.fa-user-shield{
+    font-size: 16px;
+    color: grey;
+}
+
+.compra-protegida{
+    text-decoration: none;
+    color: #3483fa;
+    font-size: x-small;
+    font-weight: 300;
+}
+
+.add-favorite{
+    display: inline-block;
+    width: 60%;
+}
+
+.share{
+    width: 30%;
+    display: inline-block;
+    transition: all 450ms ease;
+}
+
+.share i,
+.add-favorite i{
+    font-size: 22px;
+    color: orange;
+}
+
+.add-favorite label,
+.share label{
+    font-size: 16px;
+}
+
+.add-favorite input, 
+.share input{
+    display: none;
+}
+/* END DETALLES DE ARTÍCULO*/
+
+/* START SECCIÓN CARACTERÍSTICAS DETALLADAS */
+
+section.caracteristicas{
+    width: 90%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7);
+    color: whitesmoke;
+    display: flex;
+    padding: 2%;
+}
+
+article.caracteristicas.simple{
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
+    list-style:none;
+    flex-direction: column;
+    width: 100%;
+    border: solid 1px #383535;
+}
+
+.caracteristica-ul {
+    list-style: none;
+}
+
+h4{
+    font-weight: 400;
+    margin: 10px 0;
+}
+.box-link{
+    width: 90%;
+    border-bottom: solid 1px #383535;
+    padding: 10px;
+    margin: 10px auto;
+}
+.box-link a{
+    color: #3483fa;
+    font-size: smaller;
+    font-weight: 300;
+}
+article.caracteristicas.icons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px #383535;
+}
+.icon-tabla{
+    display: flex;
+    width: 40%;
+    align-self: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.icon-tabla i{
+    text-align: center;
+}
+
+.icon-tabla h5{
+    font-size: xx-small;
+}
+
+p.subtitle{
+    text-align: center;
+    display: flex;
+    align-content: center;
+}
+
+.title-green{
+    align-content: center;
+    display: flex;
+}
+
+ul.barra-reput{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 90%;
+    align-items: center;
+}
+
+li.barra-color{
+    height: 8px;
+    width: 50px;
+    background: whitesmoke;
+}
+
+li.barra-color.pink{
+    background: #fff0f0;
+}
+
+li.barra-color.salmon{
+    background: #fff5e8;
+}
+
+li.barra-color.yellow{
+    background: #fffcda;
+}
+
+li.barra-color.lime{
+    background: #f1fdd7;
+}
+
+li.barra-color.green{
+    background: #39b54a;
+    height: 12px;
+}
+
+.box-reput{
+    width: 33%;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+    border-left: solid #383535 1px;
+}
+
+.box-reput h6{
+    color: #1bad20;
+    font-size: x-large;
+    font-weight: 300;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.box-reput.left{
+    border-left: none;
+}
+
+p.informative-L{
+    font-size: small;
+    font-weight: 200;
+    padding: 15px;
+    border: solid 1px #383535;
+    background: black;
+    border-radius: 5px;
+}
+
+section.medios-de-pago{
+    pad: 1%;
+}
+
+section.medios-de-pago h5{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.contain-logos-cripto{
+    margin: 0 auto;
+    border: 1px solid #383535;
+    border-radius: 5px;
+    padding: 15px;
+    background: black;
+}
+form.search i{
+    color: gray;
+    font-size: 20px;
+}
+
+form.search input{
+    border: none;
+    background: white;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+h4.text-gray{
+    color: gray;
+}
+
+textarea#questions{
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+section.questions{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-questions{
+    width: 90%;
+    display: flex;
+    flex-direction: initial;
+    justify-content: space-around;
+}
+
+.buttons-questions button{
+    width: 48%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.button-send{
+border-radius: 7px;
+color: white;
+border: 1px solid;
+background-color: orange;
+}
+
+.button-delete{
+    border-radius: 7px;
+    background: white;
+    color: orange;
+    border: solid 1px orange;
+    margin-right: 5px;
+}
+
+.main-valoraciones{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+section.valoraciones i{
+    color: gold;
+    font-size: 20px;
+}
+
+section.valoraciones i.title{
+    font-size: 30px;
+}
+
+.stars-title{
+    width: 100%;
+    margin: 0px auto 5px; 
+    justify-content: center;
+}
+
+h2.valoracion-num{
+    font-weight: 300;
+    font-size: 36px;
+    margin-left: 20px;
+}
+
+p.text-valoracion{
+    font-size: 16px;
+    color: grey;
+    font-weight: 300;
+    padding: 10px;
+}
+
+article.val{
+    border-bottom: solid 1px #383535;
+    border-top: solid 1px #383535;
+}
+ 
+/* END SECCIÓN CARACTERÍSTICAS DETALLADAS */
+
+/* START MEDIA QUERIES */
+
+@media(min-width: 0px){
+}
+
+@media(min-height: 425px){
+   
+    
+}
+
+@media(min-width: 768px){
+    .article-detalle{
+        margin: 10px auto 0;
+    }
+    ul.footer-tablet{
+        display: flex;
+        justify-content: space-around;
+    }
+    section.information-seller{
+    width: 100%;
+}
+    li.barra-color{
+        width: 90px;
+    }
+    textarea#questions{
+        width: 90%;
+    
+    }
+  
+
+@media(min-width: 1024px){
+    main{
+        display: flex;
+    }
+    .container-images{
+        width: 500px;
+    }
+    .article-detalle{
+        display: flex;
+        justify-content: space-around;
+    }
+    .selector{
+        width: 300px;
+    }
+
+    h3.title-product{
+        width: 100%;
+    }
+    p.informative-L,
+    .caracteristicas-container,
+    .caracteristicas-container{
+        width: 500px;
+    }
+
+
+    section.main-product{
+        max-width: 40%;
+        padding-left: 10px;
+        border: grey 1px solid;
+        border-radius: 5px;
+    }
+
+.butns{
+    flex-direction: column;
+    align-items: center;
+}
+
+    div.buy,
+    button.add{
+        width: 280px;
+    }
+   
+    section.caracteristicas{
+        position: relative;
+    }
+    section.information-seller{
+        border: 1px solid grey;
+        border-radius: 5px;
+        max-width: 40%;
+    }
+    section.caracteristicas h4{
+        width: 100%;
+        margin: 10px 0 10px 10px;
+    }
+    li.barra-color{
+        width: 50px;
+    }
+    .box-link.desktop{
+        border: none;
+    }
+    .block-3{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .block-2{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .caracteristicas-container {
+        display: flex;
+      
+    }
+    section.medios-de-pago{
+        max-width: 40%;
+        padding: 20px 5px;
+        border: solid 1px grey;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+   
+}
+
+@media(min-width: 1440px){
+    section.medios-de-pago{
+        margin-right: 45px;
+    }
+    section.information-seller{
+        right: 45px;
+    }
+    section.main-product{
+        margin-left: 25px;
+    }
+    li.barra-color{
+        width: 80px;
+    }
+    section.valoraciones i.title{
+        font-size: 50px;
+    }
+    .box,
+article.caracteristicas{
+    width: 500px;
+}
+}
+}
